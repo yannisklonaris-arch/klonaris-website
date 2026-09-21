@@ -1,0 +1,247 @@
+{
+  "theme": "dark_default_with_navy_and_silver",
+  "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST / ARCHETYPE 2 HYBRID (Engineering Rigor & Precision)",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#070B14",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#93C5FD",
+          "error": "#F87171",
+          "success": "#34D399",
+          "border": "#1E293B",
+          "coordinate_ticks": "#475569"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#0D1527",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#93C5FD",
+          "error": "#F87171",
+          "success": "#34D399",
+          "border": "#1E293B"
+        }
+      },
+      {
+        "name": "card_subtle",
+        "kind": "solid",
+        "bg": "#111C33",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#CBD5E1",
+        "roles": {
+          "link": "#60A5FA",
+          "border": "#283959"
+        }
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#E2E8F0",
+        "on_bg": "#090D1A",
+        "on_bg_muted": "#334155"
+      },
+      {
+        "name": "hero",
+        "kind": "gradient",
+        "contrast_against": "#0A1020",
+        "guarantee": "radial-gradient(ellipse at 50% 20%, rgba(30,58,138,0.18) 0%, rgba(7,11,20,0.95) 75%), linear-gradient(180deg, #070B14 0%, #0B1426 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#93C5FD",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "header_glass",
+        "kind": "glass",
+        "contrast_against": "#080E1C",
+        "guarantee": "backdrop-blur-xl bg-[#070B14]/85 border-b border-[#1E293B]/80",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "badge_engineering",
+        "kind": "solid",
+        "bg": "#16233B",
+        "on_bg": "#E2E8F0",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "badge_accent",
+        "kind": "solid",
+        "bg": "#172E4C",
+        "on_bg": "#93C5FD",
+        "on_bg_muted": "#60A5FA"
+      }
+    ],
+    "accent": "#93C5FD",
+    "on_accent": "#0A1122",
+    "metallic_silver": "#E2E8F0",
+    "metallic_silver_muted": "#94A3B8",
+    "blueprint_line": "#1E293B",
+    "blueprint_line_bright": "#334D74",
+    "schematic_cyan_accent": "#38BDF8"
+  },
+  "typography": {
+    "font_heading": "'Manrope Variable', -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_body": "'DM Sans Variable', sans-serif",
+    "font_mono": "'JetBrains Mono Variable', monospace",
+    "import_statements": [
+      "@import '@fontsource-variable/manrope';",
+      "@import '@fontsource-variable/dm-sans';",
+      "@import '@fontsource-variable/jetbrains-mono';"
+    ],
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": [
+      "No Inter / Roboto / Space Grotesk on headings",
+      "Headings use 'Manrope Variable' with tight tracking (tracking-tight or tracking-tighter) and weights 700 or 800",
+      "Overlines, coordinate tags, step numbers, and technical metadata MUST use 'JetBrains Mono Variable' uppercase with tracking-[0.2em] (text-xs or text-sm)",
+      "Body paragraphs use 'DM Sans Variable' text-base (16px) with leading-relaxed (line-height 1.7) for maximum readability in French and English"
+    ]
+  },
+  "entry_surfaces": {
+    "/": "split schematic hero — brand positioning with masked line reveal left + interactive live document before/after engineering comparator right",
+    "/services": "numbered technical service chapters — structured layout with schematic blueprint grids and PDF artifact inspector",
+    "/how-it-works": "7-step technical engineering workflow pipeline — interactive flowchart with milestone checkpoints and human-in-the-loop verification badge",
+    "/about": "engineering founder manifesto — transparent background panel with student engineer credentials, ethics, and technical rigor pillars",
+    "/contact": "secure request a quote dispatch panel — technical intake form with scope estimator and post-contact secure transfer advisory",
+    "/privacy": "GDPR compliance and confidentiality architecture document — structured legal clauses with data retention rules",
+    "/legal": "engineering service legal terms and liability boundaries"
+  },
+  "visual_enhancers": {
+    "schematic_grid": "Subtle 40px blueprint grid overlay via CSS background-image with coordinate markers (e.g., [SEC-01 // LAT-48.85])",
+    "hairline_borders": "1px precision solid borders (#1E293B) with active corner ticks (2x2px silver corner pluses '+')",
+    "document_structure_motifs": "Interactive before/after engineering document restructuring viewer with toggleable diff highlighting",
+    "metallic_sheen": "Linear gradient silver accents for high-priority CTA buttons and section tags (from #F8FAFC via #CBD5E1 to #94A3B8)",
+    "chapter_numbers": "Manifesto style large mono section identifiers: '01 / RESUME', '02 / RESTRUCTURATION', '03 / ORGANISATION', '04 / PDF_FINITIONS'"
+  },
+  "motion": {
+    "library": "motion/react",
+    "scroll": "Smooth momentum scrolling and subtle parallax via framer-motion variants",
+    "entrance": "Staggered line reveal (y: [20, 0], opacity: [0, 1], duration: 0.6s, ease: [0.16, 1, 0.3, 1])",
+    "interactive": "Hover lift on cards (-translate-y-1) with 1px border highlight transition (#1E293B to #38BDF8)",
+    "prefers_reduced_motion": "Wrap all animations in motion query check and disable layout springs when reduced motion is preferred"
+  },
+  "accessibility": {
+    "wcag_level": "WCAG AA / APCA Verified",
+    "contrast_ratios": "All text elements maintain >= 4.8:1 against deep navy backgrounds (#F1F5F9 on #070B14 is 16.2:1; #94A3B8 on #070B14 is 5.8:1)",
+    "focus_states": "Visible high-contrast ring with ring-2 ring-blue-400 ring-offset-2 ring-offset-[#070B14] on all inputs, buttons, and links",
+    "test_attributes": "data-testid mandatory on all interactive buttons, language toggles, quote form inputs, and tab triggers"
+  },
+  "image_urls": [
+    {
+      "category": "hero_schematic_texture",
+      "url": "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxibHVlcHJpbnQlMjBlbmdpbmVlcmluZyUyMHNjaGVtYXRpY3xlbnwwfHx8fDE3ODg2OTcyMjh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dark blue technical wireframe sketches used with overlay as blueprint backdrop texture in hero/service features"
+    },
+    {
+      "category": "engineering_workspace_founder",
+      "url": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlY2huaWNhbCUyMHdvcmtzcGFjZXxlbnwwfHx8fDE3ODg2OTcyMjh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Precision engineering technical measurement with calipers on drawings for About/Founding Manifesto section"
+    },
+    {
+      "category": "engineering_cad_station",
+      "url": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxibHVlcHJpbnQlMjBlbmdpbmVlcmluZyUyMHNjaGVtYXRpY3xlbnwwfHx8fDE3ODg2OTcyMjh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Technical workstation monitor showing architectural and structural schemas for Services transformation gallery"
+    }
+  ],
+  "bilingual_requirements": {
+    "default_language": "fr",
+    "supported_languages": ["fr", "en"],
+    "implementation": "React Context / state-driven language store with complete translation dictionaries for all pages (Home, Services, How It Works, About, Contact/Quote, Privacy, Legal, Header, Footer)",
+    "french_copy_tone": "Rigueur d'ingénierie, clarté absolue, précision chirurgicale, confidentialité absolue, révision humaine systématique",
+    "english_copy_tone": "Engineering rigor, uncompromising clarity, surgical structure, strict confidentiality, human-in-the-loop review"
+  },
+  "key_pages_and_components": {
+    "header": {
+      "path": "frontend/src/components/Header.tsx",
+      "features": "Geometric 'KLONARIS' wordmark with engineering submark '[ DOC.ENG // REV.2026 ]', desktop navigation links (Accueil, Services, Méthode, À Propos, Contact), FR/EN toggle with active indicator, 'Demander un devis' CTA button"
+    },
+    "home_page": {
+      "path": "frontend/src/pages/Home.tsx",
+      "sections": [
+        "Hero: Kinetic title reveal, value proposition, quick technical tags, primary CTA, secondary sample viewer trigger",
+        "Interactive Before/After Comparator: Live interactive document transformer showing raw unformatted markdown/notes vs structured professional technical documentation",
+        "The 4 Engineering Pitfalls Solved: Information dilution, structural chaos, uncalibrated AI hallucinations, non-standardized delivery",
+        "Key Benefits: 100% Human verification by engineering students, time reclaimed for R&D teams, audit-ready PDF formats",
+        "Confidentiality & Security Vault: Strict NDA commitment, no client data used for AI training, European GDPR compliance, encrypted storage",
+        "Quote Estimator Mini-Calculator: Interactive scope calculator (Page volume, document complexity, turnaround time) feeding into quote request",
+        "Bottom CTA Dispatch"
+      ]
+    },
+    "services_page": {
+      "path": "frontend/src/pages/Services.tsx",
+      "sections": [
+        "Service 1: Synthèse & Condensation Technique (Extract essential engineering data without losing critical specifications)",
+        "Service 2: Restructuration & Hiérarchie Normée (Apply rigorous engineering structure, ISO/IEC aligned headings)",
+        "Service 3: Organisation & Schématisation (Tables, callouts, formula standardization, technical glossaries)",
+        "Service 4: Finition & Export PDF d'Élite (Clean typography, vector diagrams, print-ready bookmarks and cover)",
+        "Document Types Supported: Specifications, audit reports, user manuals, white papers, R&D technical memos"
+      ]
+    },
+    "how_it_works_page": {
+      "path": "frontend/src/pages/HowItWorks.tsx",
+      "sections": [
+        "7-Step Rigorous Pipeline (1. Audit initial & diagnostic, 2. Évaluation de charge & complexité, 3. Devis sur-mesure transparent, 4. Acompte de 50% sécurisé, 5. Traitement hybride IA assistée + Relecture critique d'ingénieur, 6. Livraison & contrôle qualité, 7. Règlement final des 50%)",
+        "Human-in-the-Loop Deep Dive: Why raw AI outputs fail technical audits and how human engineering review prevents catastrophic errors",
+        "Turnaround Times & Delivery SLAs"
+      ]
+    },
+    "about_page": {
+      "path": "frontend/src/pages/About.tsx",
+      "sections": [
+        "Founder Profile: Engineering student background, commitment to precision and technical literacy",
+        "The Klonaris Manifesto: Why messy documentation slows down industrial and software progress",
+        "Core Ethics: Zero fabricated credentials, transparency on AI usage as a tool (not an autonomous substitute), strict integrity"
+      ]
+    },
+    "contact_quote_page": {
+      "path": "frontend/src/pages/Contact.tsx",
+      "sections": [
+        "Technical Intake Form: Project name, engineering domain (Mechanical, Software, Civil, Aerospace, General R&D), estimated page volume, urgency, description of source material",
+        "Secure Handoff Protocol: Clear explanation that sensitive files are transferred via end-to-end encrypted link AFTER initial quote validation",
+        "Direct Contact & Availability hours"
+      ]
+    },
+    "legal_and_privacy_pages": {
+      "path": "frontend/src/pages/Legal.tsx & frontend/src/pages/Privacy.tsx",
+      "sections": [
+        "GDPR Articles compliance, data purge policy after project completion, NDA mutual agreements, intellectual property guarantees"
+      ]
+    },
+    "footer": {
+      "path": "frontend/src/components/Footer.tsx",
+      "features": "Large geometric KLONARIS watermark, coordinate grid stamps, direct links, confidentiality badge, copyright notice"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Follow the exact color tokens in frontend/src/index.css using Tailwind v4 @theme inline and dark class by default on html",
+    "Install no unnecessary fonts or packages; use the bundled fontsource imports (@fontsource-variable/manrope, @fontsource-variable/dm-sans, @fontsource-variable/jetbrains-mono)",
+    "Implement the bilingual toggle (FR/EN) smoothly using a lightweight React context so the entire site can switch instantly without page reload",
+    "Keep all pricing quote-based as requested (no fake fixed price packages or fake testimonials)",
+    "Include the interactive before/after document transformation component on the Home page to make the value proposition palpable",
+    "Add 'data-testid' to all buttons, links, form inputs, language switchers, and interactive cards for automated verification"
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "anti_ai_slop": "Do not make generic centered cards with purple gradients. Use dark navy (#070B14), metallic silver (#E2E8F0), blueprint borderlines (#1E293B), and monospace technical annotation tags",
+    "spacing": "Use generous spacing (py-24, gap-12) and sharp technical card styling with 1px hairline strokes and technical corner indicators",
+    "toasts": "Use sonner for notifications on contact form submit and quote calculations"
+  }
+}

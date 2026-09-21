@@ -1,0 +1,26 @@
+{
+  "summary": "Full regression on Klonaris site condensation (FR/EN). 11/11 UI+integration checks passed: Home has no Cadrage/estimator; header+footer have only 4 nav links (no Services); /services returns 404; /how-it-works shows the 7 new steps in correct order with HUMAN-IN-THE-LOOP badge on step 06, step 05 mentions Paiement intégral / 100%, no 'acompte 50%' anywhere; About H1 is 'Pourquoi Klonaris existe' with founder block + 3 pillars; Legal + Terms show 100% payment and no 50% acompte/solde; Privacy no longer mentions 'domaine d'ingénierie' nor 'volume estimé'; EN toggle shows 'Full payment' on step 05 and 'Why Klonaris exists' on About; full nav flow works; POST /api/quote-requests via UI returns success with 'Demande envoyée'.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/quote-requests", "issue": "emailSent may return false when RESEND_API_KEY is empty (pre-existing P0 tracked separately, not blocking this iteration)"}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Console shows repeated 'Failed to load resource: 503' errors on every page load — likely a missing/broken static asset (e.g., an image or font). Main agent should inspect Network tab and remove or fix the failing request to keep the console clean."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "N/A - no auth",
+  "seed_data_creation": "Created one quote request via UI (Test Condensation / test.condensation@example.com).",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All condensation acceptance criteria verified against preview URL https://klonaris-preview.preview.emergentagent.com. Data-testids used: nav-*, mobile-nav-*, footer-*, step-01..07, pillar-0..2, hero-cta-primary, final-cta-button, lang-fr, lang-en, contact-*. If retesting, note the 503 static-asset console error that is unrelated to the tested features."
+}
