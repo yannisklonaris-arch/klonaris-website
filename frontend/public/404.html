@@ -4,17 +4,14 @@
     <meta charset="utf-8" />
     <title>Klonaris</title>
     <script>
-      const path = window.location.pathname;
-      const repo = "/klonaris-website";
+      const route =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
 
-      if (path.startsWith(repo)) {
-        const route = path.slice(repo.length) || "/";
-        window.location.replace(
-          repo + "/?redirect=" + encodeURIComponent(route)
-        );
-      } else {
-        window.location.replace(repo + "/");
-      }
+      window.location.replace(
+        "/?redirect=" + encodeURIComponent(route)
+      );
     </script>
   </head>
   <body></body>
