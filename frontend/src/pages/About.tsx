@@ -4,7 +4,7 @@ import { useI18n } from "@/i18n";
 import { usePageMeta } from "@/lib/seo";
 import { Reveal, LineReveal, SectionTag, CornerFrame } from "@/components/Reveal";
 
-const WORKSHOP_IMG = "/img/workshop.jpg";
+const WORKSHOP_IMG = `${import.meta.env.BASE_URL}img/workshop.jpg`;
 
 export default function About() {
   const { t } = useI18n();
