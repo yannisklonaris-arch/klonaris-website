@@ -18,7 +18,7 @@ if (redirect) {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename="/klonaris-website">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </QueryClientProvider>
