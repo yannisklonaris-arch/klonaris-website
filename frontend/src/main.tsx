@@ -12,7 +12,7 @@ if (redirect) {
   window.history.replaceState(
     null,
     '',
-    `/klonaris-website${redirect}`
+    redirect
   )
 }
 createRoot(document.getElementById('root')!).render(
