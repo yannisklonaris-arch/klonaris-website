@@ -8,12 +8,12 @@ function Wordmark() {
   return (
     <Link to="/" data-testid="logo-link" className="group flex items-center gap-3">
       <img
-        src="/logo-mark.png"
+        src={`${import.meta.env.BASE_URL}logo-mark.png`}
         alt="Klonaris"
         className="h-9 w-9 shrink-0 object-contain transition-transform duration-300 group-hover:scale-105"
       />
       <span className="leading-none">
-        <img src="/logo-text.png" alt={t.brand.name} className="h-3.5 w-auto" />
+        <img src={`${import.meta.env.BASE_URL}logo-text.png`} alt={t.brand.name} className="h-3.5 w-auto" />
         <span className="mt-1 block font-mono text-[9px] tracking-[0.2em] text-[#475569]">
           {t.brand.sub}
         </span>
