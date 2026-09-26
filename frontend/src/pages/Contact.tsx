@@ -18,12 +18,6 @@ interface QuotePayload {
   ai_consent: boolean;
 }
 
-interface QuoteResponse {
-  id: string;
-  status: string;
-  emailSent: boolean;
-}
-
 const URGENCY_KEYS = ["standard", "priority", "critical"] as const;
 
 type UrgencyKey = (typeof URGENCY_KEYS)[number];
