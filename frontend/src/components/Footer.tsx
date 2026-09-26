@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid gap-12 pb-14 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <img
-              src="/logo-full.png"
+              src={`${import.meta.env.BASE_URL}logo-full.png`}
               alt="Klonaris — Structured Documentation"
               data-testid="footer-logo"
               className="h-24 w-auto"
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
       </div>
       <div aria-hidden="true" className="pointer-events-none select-none px-5 pt-4 pb-10 sm:px-8">
-        <img src="/logo-text.png" alt="" className="w-full opacity-[0.07]" />
+        <img src={`${import.meta.env.BASE_URL}logo-text.png`} alt="" className="w-full opacity-[0.07]" />
       </div>
     </footer>
   );
