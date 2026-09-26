@@ -57,15 +57,11 @@ export default function WebDesign() {
             <p className="font-heading text-4xl font-extrabold tracking-tight text-metal sm:text-5xl">
               {w.pricing.from}
             </p>
-            <div className="mt-8 grid gap-px border border-[#1E293B] bg-[#1E293B] sm:grid-cols-2">
-              {w.pricing.items.map((item) => (
-                <div key={item.label} className="flex items-baseline justify-between gap-4 bg-[#070B14] p-6">
-                  <span className="text-sm text-[#CBD5E1]">{item.label}</span>
-                  <span className="font-mono text-sm font-bold whitespace-nowrap text-[#F1F5F9]">{item.price}</span>
-                </div>
-              ))}
+            <div className="mt-8 border-t border-[#1E293B] pt-8 text-center">
+              <p className="text-sm leading-relaxed text-[#94A3B8] sm:text-base">
+                {w.pricing.note}
+              </p>
             </div>
-            <p className="mt-5 text-xs leading-relaxed text-[#64748B]">{w.pricing.note}</p>
           </CornerFrame>
         </Reveal>
       </section>
