@@ -42,13 +42,28 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
 
   const mutation = useMutation({
-    mutationFn: (payload: QuotePayload) => apiPost<QuoteResponse>("/quote-requests", payload),
-    onSuccess: () => {
-      setSent(true);
-      toast.success(c.form.successTitle);
-    },
-    onError: () => toast.error(c.form.errorMsg),
-  });
+  mutationFn: async (payload: QuotePayload) => {
+    const response = await fetch("https://formspree.io/f/xdekwpkb", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      throw new Error("Form submission failed");
+    }
+
+    return response.json();
+  },
+  onSuccess: () => {
+    setSent(true);
+    toast.success(c.form.successTitle);
+  },
+  onError: () => toast.error(c.form.errorMsg),
+});
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
